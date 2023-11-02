@@ -1,3 +1,5 @@
+import "../App.css";
+
 const Job = ({
   logo,
   title,
@@ -5,6 +7,8 @@ const Job = ({
   time,
   location,
   contract,
+  newJob,
+  featured,
 }: {
   logo: string;
   title: string;
@@ -12,6 +16,8 @@ const Job = ({
   time: string;
   location: string;
   contract: string;
+  newJob: boolean;
+  featured: boolean;
 }) => {
   return (
     <div className="w-full bg-white drop-shadow-xl p-4 flex justify-between rounded-lg mb-6">
@@ -21,15 +27,16 @@ const Job = ({
 
           <div className="job--description--section">
             <div className="sub--title--section flex items-center gap-2">
-              <h1 className="text-[#A7C6D1] font-leaguespartan font-bold">
-                {subtitle}
-              </h1>
-              <button className="bg-[#A7C6D1] rounded-2xl text-white p-2 font-leaguespartan font-bold text-sm">
-                NEW!
-              </button>
-              <button className="bg-[#334D5C] text-white rounded-2xl p-2 font-leaguespartan font-bold text-sm">
-                FEATURED
-              </button>
+              {/* <h1 className="subtitle--container text-[#A7C6D1] font-leaguespartan font-bold"> */}
+              <h1 className="subtitle--container">{subtitle}</h1>
+              {/* <button className="bg-[#A7C6D1] rounded-2xl text-white p-2 font-leaguespartan font-bold text-sm"> */}
+              {newJob ? (
+                <button className="new--btn--container">NEW!</button>
+              ) : null}
+              {/* <button className="bg-[#334D5C] text-white rounded-2xl p-2 font-leaguespartan font-bold text-sm"> */}
+              {featured ? (
+                <button className="featured--btn--container">FEATURED</button>
+              ) : null}
             </div>
 
             <div>

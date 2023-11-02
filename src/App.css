@@ -1,0 +1,32 @@
+.subtitle--container {
+    color: hsl(180, 29%, 50%);
+    font-family: 'League Spartan';
+    font-weight: 700;
+
+}
+
+.new--btn--container {
+    background: hsl(180, 29%, 50%);
+    border-radius: 8px;
+    padding: 4px 4px 2px 4px;
+
+    font-family: 'League Spartan';
+    color: white;
+    font-size: 12px;
+}
+
+.featured--btn--container {
+    background-color: hsl(180, 14%, 20%);
+    border-radius: 8px;
+    padding: 4px 4px 2px 4px;
+    color: white;
+    font-size: 12px;
+    font-family: 'League Spartan';
+}
+
+.search--btn--heading {
+    background-color: hsl(180, 29%, 50%);
+    font-family: 'League Spartan';
+    font-weight: 700;
+    color: #334D5C;
+}
